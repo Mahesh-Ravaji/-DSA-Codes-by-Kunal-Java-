@@ -1,0 +1,34 @@
+// import java.util.*;
+
+// class findUnique {
+//     public static void main ( String [] args ){
+//         int [] arr = { 2,3,3,4,2,6,4};
+//         System.out.println(ans(arr));
+//     }
+
+//     private static int ans (int [] arr){
+//         int unique =0;
+//         for (int n:arr){
+//             unique ^= n; // XOR of all the elements present in arr
+
+//         }
+//         return unique;
+        
+//     }
+// }
+
+import java.util.*;
+
+class findUnique ()
+{
+    public static void main (String args [])
+    {
+        int arr[] = {2,4,6,7,9,   }
+        BinarySearch();
+    }
+
+}
+
+int BinarySearch(int l, int u, int m){
+
+}

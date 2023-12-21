@@ -1,0 +1,40 @@
+#String Variables
+name: !!str Mahesh Ravaji
+fruit: "apple"
+job : 'swe'
+
+bio : |
+hey my name is Mahesh Ravaji
+i am a very nice dude
+
+# write a single line in multiple lines 
+message : >
+this will
+all be 
+in one single line
+
+number : 334
+marks : 23.3
+booleanvalue : NO # n, N , false , False ,FALSE
+# same for true -> yes , Y , y 
+
+# specify the dataType ( !!)
+zero : !!int 35
+negataiveNum: !!int -3
+binaryNum : !!int 033333b
+hexa : !!int 0x45
+commaValue: !!int +540_000 #540,000
+exponential numbers : 3.3434
+
+#floating point numbers
+simplenumbers : !!float 3.3
+infinity: !!float .inf
+not a num : .nan  #not a Number
+
+#null 
+surname : !!null Null # or null Null ~
+~ : this is null key
+
+#dates
+date : !!timestamp 2023-08-08
+date : 08-08-2023

@@ -1,0 +1,8 @@
+---
+School:
+- name: DPS
+ principle : Someone
+ students :
+  - rno : 32    
+    name : Mahesh
+    marks : 90

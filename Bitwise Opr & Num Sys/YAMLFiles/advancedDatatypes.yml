@@ -1,0 +1,79 @@
+student : !!seq
+ - marks 
+ - name 
+ - roll_no
+
+ #like this also
+ cities : [ new delhi, mumbai]
+
+ #some of the keys of the seq will emplty 
+ #spares seq
+ sparse seq:
+ - hey 
+ - how 
+ -
+ - Null
+ - sup
+
+#nested Sequence 
+-
+ - mango
+ - apple
+ - banana 
+- 
+ - marks
+ - roll no
+ - dates
+
+# key: value pairs are called maps
+!!map 
+
+#nested mappings: map within an map
+name: Mahesh
+role : 
+ age : 20
+ job : student 
+
+#same as 
+name: Mahesh
+role : { age : 20, job : student }
+ 
+#pairs : keys may havae duplicate values 
+#!!pairs 
+
+pair example : !!pairs
+ - job : student 
+ - job : teacher
+#same as 
+pair example : !! pairs [ job: student , job : teacher
+]
+#this will be an array of hash tables
+
+#!!set will allow you to have unique values 
+name : !!set
+ ? kunal
+ ? Mahesh
+ ? Akash
+
+#dictionary !!omap
+people : !!omap
+ - kunal : 
+    name : kunal 
+    age : 20
+    height : 180
+ - Mahesh :
+    name : Mahesh
+    age : 20
+    height : 181
+
+# reusing some properties using Anchors
+person : &Likes
+  fav fruit : mango
+  dislikes : grapes 
+
+kunal Kushwaha:
+  <<: *Likes
+
+Mahesh Ravaji :
+  <<: *Likes
+  dislikes : Berries #overriden

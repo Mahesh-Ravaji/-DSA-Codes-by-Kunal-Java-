@@ -1,0 +1,25 @@
+# YAMl is Case Sensitive( Sytax and Case sensitiviy just like Python)
+# It is collection of 0 or More no of documents
+"apple": "i am a red fruit"
+1 : " this is Mahesh roll no "
+
+# To differential diff types of Documents 
+---
+#list ( represented by -)
+-apple
+-mango 
+-banana
+---
+#Indentation is Important 
+cities:
+ - new Delhi
+ - mumbai
+ - gujrat 
+---
+# you can wirte like this as well
+ cities: [new delhi, mumbai, gujrat]
+---
+{mango: "Yellow_color", age:20}
+
+ # to finish Yaml Document 
+ ...

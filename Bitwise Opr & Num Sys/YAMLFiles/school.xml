@@ -1,0 +1,11 @@
+<xml version="1.0"encoding="UTF-8">
+
+<School name = "DPS"  principle ="someone">
+    <Student>
+        <Student>
+            <rno> 49</rno>
+            <name> Mahesh</name>
+            <marks>99 </marks>
+        </Studnet>
+    </Studnet>
+</Studnet>
